@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-kafka"
+version = "0.1.0"
+description = ""
+authors = ["Mohammed Alzaid <m.al-zaid@live.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_kafka"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.88.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+loguru = "^0.6.0"
+aiokafka = "^0.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
